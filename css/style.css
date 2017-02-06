@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+
+body {
+	font-family: 'Roboto', sans-serif;
+ 	padding-top: 125px;
+}
+
+html, body {
+    height: 100%;
+}
+
+.page-content {
+    min-height: 100%;
+    margin-bottom: -70px;
+    padding-bottom: 70px;
+}
+
+ 
+nav {
+	padding-top: 25px; 
+}
+
+section {
+	padding-top: 40px;
+}
+
+
+a {
+	text-decoration: underline;
+	color: rgb(1,150,205);
+}
+a:hover {
+ text-decoration: none;
+}
+
+a.no-underline:hover {
+	color: white;
+}	
+
+a i.fa {
+	color: white;
+}
+
+
+footer {
+   
+    height: 70px;
+ 	 
+    width: 100%;
+   
+}
+
+.top10 {
+	padding-top: 20px;
+}
+
+.no-underline {
+	text-decoration: none;
+}
+
+.underline {
+	text-decoration: underline;
+}
+.navbar {
+margin: 0;	
+}
+
+.fa {
+	font-size: 30px;
+	padding-left: 15px;
+}
+
+
+ 
+.bg-dark-blue {
+	background-color: #1861ae;
+}
+
+.bg-light-blue {
+	background-color: rgb(1,150,205);
+}
+
+.white {
+	color: white;
+}
+
+.top25 {
+	margin-top: 25px;
+}
+
+#download-cards {
+	background: url("../img/header-bg.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+	min-height: 300px;
+	background-size: contain;
+
+}
+
+#download-cards p:first-child  {
+	padding-top: 40px;
+		 
+}
+
+#download-cards p {
+	padding-left: 40px;
+	font-size: 16px;
+}
+
+#download-cards a , #print-at-home a {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom:  10px;
+	background-color: #1b95d1;
+}
+#download-cards a  {
+	margin-left: 40px; 
+	
+}
+
+.main-title {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-size: 30px;
+	 
+}
+
+.img-side img {
+	height: 200px;
+	display: inline;
+	padding-left: 10px;
+}
+
+
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+
+/* The controlsy */
+.carousel-control {
+	left: -12px;
+    height: 40px;
+	width: 40px;
+    background: none repeat scroll 0 0;
+    color:#4d4d4d;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 90px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* The indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -10px;
+	margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+	background: #cecece;
+}
+.carousel-indicators .active {
+background: #428bca;
+}
+
+.carousel-inner img {
+	max-width: 100%;
+}
+
+.carousel-control 			 { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+@media (max-width: 767px) {
+	.carousel-inner .active.left { left: -100%; }
+	.carousel-inner .next        { left:  100%; }
+	.carousel-inner .prev		 { left: -100%; }
+	.active > div { display:none; }
+	.active > div:first-child { display:block; }
+
+}
+@media (min-width: 767px) and (max-width: 992px ) {
+	.carousel-inner .active.left { left: -50%; }
+	.carousel-inner .next        { left:  50%; }
+	.carousel-inner .prev		 { left: -50%; }
+	.active > div { display:none; }
+	.active > div:first-child { display:block; }
+	.active > div:first-child + div { display:block; }
+}
+@media (min-width: 992px ) {
+	.carousel-inner .active.left { left: -25%; }
+	.carousel-inner .next        { left:  25%; }
+	.carousel-inner .prev		 { left: -25%; }	
+}
+
+
