@@ -3,6 +3,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
  	padding-top: 125px;
+
 }
 
 html, body {
@@ -41,6 +42,9 @@ a i.fa {
 	color: white;
 }
 
+p {
+	text-align: justify;
+}
 
 footer {
    
@@ -50,6 +54,16 @@ footer {
    
 }
 
+.flip img {
+	height:  300px;
+	display: inline;
+	float: left;
+	padding-right: 	20px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
 .top10 {
 	padding-top: 20px;
 }
@@ -62,7 +76,7 @@ footer {
 	text-decoration: underline;
 }
 .navbar {
-margin: 0;	
+	margin: 0;	
 }
 
 .fa {
@@ -73,11 +87,11 @@ margin: 0;
 
  
 .bg-dark-blue {
-	background-color: #1861ae;
+	background-color: #074396;
 }
 
 .bg-light-blue {
-	background-color: rgb(1,150,205);
+	background-color: rgb(21,149,211);
 }
 
 .white {
@@ -89,7 +103,9 @@ margin: 0;
 }
 
 #download-cards {
-	background: url("../img/header-bg.jpg");
+
+	margin-top: 25px;
+	background: url("../img/header-bg-1.jpg");
 	background-position: right;
 	background-repeat: no-repeat;
 	min-height: 300px;
@@ -112,12 +128,9 @@ margin: 0;
 	padding-right: 20px;
 	padding-top: 10px;
 	padding-bottom:  10px;
-	background-color: #1b95d1;
+	background-color: #1595d3;
 }
-#download-cards a  {
-	margin-left: 40px; 
-	
-}
+ 
 
 .main-title {
 	padding-top: 40px;
@@ -125,6 +138,13 @@ margin: 0;
 	font-size: 30px;
 	 
 }
+
+.main-title p {
+ 
+	font-size: 18px;
+	 
+}
+
 
 .img-side img {
 	height: 200px;
