@@ -54,7 +54,7 @@ footer {
     height: 70px;
  	 
     width: 100%;
-   
+   	z-index: 10;
 }
 
 /************
@@ -203,6 +203,49 @@ colors
 }
 
 
+.scroll-top-wrapper {
+    position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 9;
+    background-color: #074396;
+	color: #eeeeee;
+	width: 40px;
+	height: 40px;
+	 
+	right: 5px;
+	bottom: 5px;
+	 
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background-color: #074396;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: 40px;
+	padding: 0;
+	margin:0;
+}
+
+
+/* Extra Things */
+body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
+
 .carousel {
     margin-bottom: 0;
     padding: 0 40px 30px 40px;
@@ -267,8 +310,15 @@ background: #428bca;
 
 @media (max-width:480px)  { 
 
+footer .list-inline>li {
+	padding-left: 0px;
+}
+
 .flip img {
-		display: none;
+		display: inline;
+		float: left;
+		width: 100%;
+		height: auto;
 	 }
 
 #download-cards {

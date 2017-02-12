@@ -2,6 +2,12 @@
 layout: fallada
 ---
 
+<div class="scroll-top-wrapper ">
+	<span class="scroll-top-inner">
+		<i class="fa fa-2x fa-angle-up"></i>
+	</span>
+</div>
+
 
 <div class="container-fluid bg-dark-blue">
 	<div class="container ">
@@ -54,9 +60,7 @@ layout: fallada
 
 		<div class="row flip text-center">
 			<div class="col-xs-12 col-sm-12 col-md-11 col-lg-11 text-center">
-
  
-	 
 					<img   src="img/card-front.jpg" alt="Trump Card">	
 				 
 					<img  src="img/card-back.jpg" alt="Trump Card">			 	
@@ -74,10 +78,7 @@ layout: fallada
 				<h3>IN THE WILD</h3>
 				<div class="gallery slide"  id="mygallery">
 					<div class="gallery-inner">
-						
  
-
-
 				</div>
 			</div>
 		</div>
@@ -117,6 +118,36 @@ var el = "";
   
 });
 
+// ===== Scroll to Top ==== 
+$(function(){
+ 
+	$(document).on( 'scroll', function(){
+ 
+ 	 
+  
+		if ($(window).scrollTop() > 100) {
+			$('.scroll-top-wrapper').addClass('show');
+		} else {
+			$('.scroll-top-wrapper').removeClass('show');
+		}
+
+if($(window).scrollTop() + $(window).height() == $(document).height()) {
+      $('.scroll-top-wrapper').removeClass('show');
+   }
+   
+
+	});
+ 
+	$('.scroll-top-wrapper').on('click', scrollToTop);
+});
+ 
+function scrollToTop() {
+	verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+	element = $('body');
+	offset = element.offset();
+	offsetTop = offset.top;
+	$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+}
 
  
 	// $('.gallery[data-type="multi"] .item').each(function(){

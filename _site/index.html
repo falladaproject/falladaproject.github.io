@@ -84,7 +84,14 @@
 	</nav>
 
    
-        <div class="container-fluid bg-dark-blue">
+        <div class="scroll-top-wrapper ">
+	<span class="scroll-top-inner">
+		<i class="fa fa-2x fa-angle-up"></i>
+	</span>
+</div>
+
+
+<div class="container-fluid bg-dark-blue">
 	<div class="container ">
 	<div class="row no-gutter">
 		<div class=" col-xs-12 col-sm-12 col-md-11 col-lg-11" id="download-cards">
@@ -135,9 +142,7 @@
 
 		<div class="row flip text-center">
 			<div class="col-xs-12 col-sm-12 col-md-11 col-lg-11 text-center">
-
  
-	 
 					<img   src="img/card-front.jpg" alt="Trump Card">	
 				 
 					<img  src="img/card-back.jpg" alt="Trump Card">			 	
@@ -155,10 +160,7 @@
 				<h3>IN THE WILD</h3>
 				<div class="gallery slide"  id="mygallery">
 					<div class="gallery-inner">
-						
  
-
-
 				</div>
 			</div>
 		</div>
@@ -198,6 +200,36 @@ var el = "";
   
 });
 
+// ===== Scroll to Top ==== 
+$(function(){
+ 
+	$(document).on( 'scroll', function(){
+ 
+ 	 
+  
+		if ($(window).scrollTop() > 100) {
+			$('.scroll-top-wrapper').addClass('show');
+		} else {
+			$('.scroll-top-wrapper').removeClass('show');
+		}
+
+if($(window).scrollTop() + $(window).height() == $(document).height()) {
+      $('.scroll-top-wrapper').removeClass('show');
+   }
+   
+
+	});
+ 
+	$('.scroll-top-wrapper').on('click', scrollToTop);
+});
+ 
+function scrollToTop() {
+	verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+	element = $('body');
+	offset = element.offset();
+	offsetTop = offset.top;
+	$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+}
 
  
 	// $('.gallery[data-type="multi"] .item').each(function(){
@@ -223,7 +255,7 @@ var el = "";
     <footer class=" bg-light-blue text-center">
 
 	<ul class="top10 list-inline white">
-		<li><h4>FOLLOW US: </h4></li>
+		<li><h5>FOLLOW US: </h5></li>
 		
 		<li><a href="https://facebook.com/falladaproject" target="_blank"><i aria-hidden="true" class="fa fa-facebook"></i></a>
 		</li>
@@ -236,7 +268,7 @@ var el = "";
 		<li><a href="https://instagram.com/falladaproject" target="_blank"><i aria-hidden="true" class="fa fa-instagram"></i></a>
 		</li>
 
-		<li style="padding-left: 20px;"><h4><a href="mailto:falladaproject@gmail.com"  target="_blank" class="white">CONTACT US</a></h4></li>
+		<li ><h5><a href="mailto:falladaproject@gmail.com"  target="_blank" class="white">CONTACT US</a></h5></li>
 
 	</ul>
 
