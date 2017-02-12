@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+ 
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
  	padding-top: 125px;
-
+ 	overflow-x: hidden; 
+ 	font-size: 16px;
+ 	line-height: 26px;
 }
 
 html, body {
@@ -54,23 +57,30 @@ footer {
    
 }
 
-.no-gutter > [class*='col-'] {
-    padding-right:0;
-    padding-left:0;
+/************
+/*typography*
+*************/
+
+#download-cards p {
+	 
+	font-size: 20px;
 }
 
-.flip img {
-	height:  300px;
-	display: inline;
-	
-	padding-right: 	20px;
+
+
+.regular {
+	font-weight: 400;
 }
+
+.thin {
+
+	font-weight: 300;
+}
+
+
 
 .uppercase {
 	text-transform: uppercase;
-}
-.top10 {
-	padding-top: 20px;
 }
 
 .no-underline {
@@ -80,16 +90,39 @@ footer {
 .underline {
 	text-decoration: underline;
 }
-.navbar {
-	margin: 0;	
-}
 
 .fa {
-	font-size: 30px;
+	font-size: 20px;
 	padding-left: 15px;
 }
 
 
+/**************
+spacing
+**************/
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.top10 {
+	padding-top: 20px;
+}
+
+
+.navbar {
+	margin: 0;	
+}
+
+.top25 {
+	margin-top: 25px;
+}
+
+
+/************
+colors
+**********/
  
 .bg-dark-blue {
 	background-color: #074396;
@@ -103,14 +136,14 @@ footer {
 	color: white;
 }
 
-.top25 {
-	margin-top: 25px;
+#mygallery img {
+	padding-top: 15px;
 }
 
 #download-cards {
 
 	margin-top: 25px;
-	background: url("../img/header-bg-1.jpg");
+	background-image: url("../img/header-bg.jpg");
 	background-position: right;
 	background-repeat: no-repeat;
 	min-height: 300px;
@@ -118,15 +151,19 @@ footer {
 
 }
 
+.flip img {
+	height:  300px;
+	display: inline;
+	padding-right: 	20px;
+}
+
+
+
 #download-cards p:first-child  {
-	padding-top: 40px;
+	padding-top: 20px;
 		 
 }
 
-#download-cards p {
-	 
-	font-size: 16px;
-}
 
 #download-cards a , #print-at-home a {
 	padding-left: 20px;
@@ -135,13 +172,21 @@ footer {
 	padding-bottom:  10px;
 	background-color: #1595d3;
 }
- 
+
+#download-cards a {
+	display: block;
+	width: 200px;
+	font-size: 18px;
+	font-style: 700;
+	text-align: center;
+	
+} 
 
 .main-title {
 	padding-top: 40px;
 	padding-bottom: 20px;
 	font-size: 30px;
-	 
+ 	margin-left: -15px;
 }
 
 .main-title p {
@@ -219,4 +264,26 @@ background: #428bca;
 	.carousel-inner .prev		 { left: -25%; }	
 }
 
+
+@media (max-width:480px)  { 
+
+.flip img {
+		display: none;
+	 }
+
+#download-cards {
+	background-image: none;
+}
+
+#download-cards a:last-child {
+	margin-bottom:  10px;
+}
+
+#print-at-home a {
+	font-size: 15px;
+	width: 290px;
+	display: block;
+}
+
+}
 
