@@ -54,6 +54,11 @@ footer {
    
 }
 
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
 .flip img {
 	height:  300px;
 	display: inline;
@@ -119,7 +124,7 @@ footer {
 }
 
 #download-cards p {
-	padding-left: 40px;
+	 
 	font-size: 16px;
 }
 
