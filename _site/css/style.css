@@ -57,6 +57,18 @@ footer {
    	z-index: 10;
 }
 
+th {
+ 
+	color: white;
+}
+td {
+	width: 150px;
+	border-bottom: 1px solid gray;
+}
+
+th, td {
+	padding-left: 5px;
+}
 /************
 /*typography*
 *************/
@@ -65,7 +77,6 @@ footer {
 	 
 	font-size: 20px;
 }
-
 
 
 .regular {
@@ -248,6 +259,14 @@ colors
 
 
 
+.desktop-only {
+	visibility: visible;
+}
+
+.mobile-only {
+	display: none;
+}
+
 .carousel {
     margin-bottom: 0;
     padding: 0 40px 30px 40px;
@@ -314,6 +333,14 @@ background: #428bca;
 
 footer .list-inline>li {
 	padding-left: 0px;
+}
+
+.desktop-only {
+	display: none;
+}
+
+.mobile-only {
+	display: block;
 }
 
 .flip img {
