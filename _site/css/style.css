@@ -366,3 +366,11 @@ footer .list-inline>li {
 
 }
 
+.item-bg {
+	background-size:cover;
+	height: 250px;
+	width: 250px;
+	background-position: center;
+	margin: 5px;
+}
+
