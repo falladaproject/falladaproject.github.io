@@ -13,18 +13,18 @@ layout: fallada
 	<div class="container ">
 	<div class="row no-gutter">
 		<div class=" col-xs-12 col-sm-12 col-md-11 col-lg-11" id="download-cards">
-			<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 white ">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 white ">
 
 
 
-				<p>Each time you drop a card, you've made a local protest. Each time you mail a card, you've made a national protest.</p>
+				<p>Leave cards to be found in your community or mail cards to Trump. Post photos of your cards in the wild using #falladaproject and #notourchoice - or send them our way and we'll post them.</p>
 
 
 				<br>
 				<p>Join in:</p> <br>
 				<ul class="list-inline">
-				<li><a class="button white no-underline" href="order-online">ORDER ONLINE</a></li>
-				<li><a class="button white no-underline" href="print-at-home">PRINT AT HOME</a> </li>
+				<li><a class="button white no-underline" href="http://FalladaProject.biz.vistaprint.com" target="_blank" >ORDER ONLINE</a></li>
+				<li><a  class="button white no-underline" href="print-at-home"  >PRINT AT HOME</a> </li>
 				</ul>
 			</div>
 		</div>
@@ -36,35 +36,16 @@ layout: fallada
 
 <section>
 	<div class="container">
-		<div class="row">
-
-
-
-			<div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
-				<h3>THE STORY</h3>
-
-				<p>In Berlin during World War II, a working class couple struggled with how to oppose Hitler. Knowing the risks, they ultimately decided to leave single postcards around the city, encouraging their fellow citizens to rise up and refuse to cooperate with the Nazis. Almost every card dropped was turned into the authorities - people were terrified to be caught with them. Two years into their project, the couple was discovered, arrested, and executed. Hans Fallada tells their true story in his classic work on resistance, "Every Man Dies Alone." In prison awaiting their fate, the husband and wife had no regrets. They knew, in the face of great danger, they had done what they could.</p>
-
-				<p>This story is the inspiration for Fallada Project. Through a modernized version of the German couple's postcard campaign, Fallada Project encourages people to do what they can to fight back against Donald Trump and his agenda. The project has two parts: 1) people opposed to Trump leave stamped, addressed cards around their communities; and 2) the like-minded find the cards and mail them to the White House. Each time you leave a card, you've made a local protest. Each time you mail a card, you've made a national protest. Once mailed, every card also reminds Trump he was not the choice of the American people.</p>
-
-
-
-				<p>There will be many bad days between now and the next elections and we must steel ourselves for the fight. Fallada Project is a way to make protest a habit, nudge each other in the direction of courage, and sustain ourselves until we can defeat Trump and his agenda at the polls. In support to the resistance, Fallada Project is a drumbeat.</p>
-
-			</div>
-
-
-
-
-		</div>
-
+		 
 		<div class="row flip text-center">
 			<div class="col-xs-12 col-sm-12 col-md-11 col-lg-11 text-center">
  
 					<img   src="img/card-front.jpg" alt="Trump Card">	
 				 
-					<img  src="img/card-back.jpg" alt="Trump Card">			 	
-				 
+					<img   id="fade-image"  src="img/card-back-white.jpg" alt="Trump Card">	
+					 
+					<br> <br>	<br>	 	
+				 	<a class="button white no-underline" href="the-story">THE STORY</a> 
 			</div>
 		</div>
 
@@ -99,7 +80,7 @@ layout: fallada
 
 <script type="text/javascript">
  
-var url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=4504868642.995ad26.0ed39e19f5c341b6ac4c987f7719365e&count=12&callback=?";
+var url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=4504868642.995ad26.0ed39e19f5c341b6ac4c987f7719365e&count=20&callback=?";
 var el = "";
 
  $.getJSON( url, function( result ) {
@@ -120,11 +101,15 @@ var el = "";
 
    $(".item img").each(function() {
    		img = $(this).attr("src");
-   		console.log($(this).parent());
+   		//console.log($(this).parent());
    		$(this).parent().css("background-image" , "url("+ img +")");
 
    })
   
+});
+
+$(window).load(function(){
+  setTimeout(function(){  $('#fade-image').attr("src", "img/card-back.jpg") }, 750);
 });
 
 // ===== Scroll to Top ==== 
