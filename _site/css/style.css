@@ -57,6 +57,18 @@ footer {
    	z-index: 10;
 }
 
+th {
+ 
+	color: white;
+}
+td {
+	width: 150px;
+	border-bottom: 1px solid gray;
+}
+
+th, td {
+	padding-left: 5px;
+}
 /************
 /*typography*
 *************/
@@ -65,7 +77,6 @@ footer {
 	 
 	font-size: 20px;
 }
-
 
 
 .regular {
@@ -147,7 +158,7 @@ colors
 #download-cards {
 
 	margin-top: 25px;
-	background-image: url("../img/header-bg.jpg");
+ 	/*background-image: url("../img/header-bg.jpg");*/
 	background-position: right;
 	background-repeat: no-repeat;
 	min-height: 300px;
@@ -169,7 +180,7 @@ colors
 }
 
 
-#download-cards a , #print-at-home a {
+#download-cards a , #print-at-home a , a.button{
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 10px;
@@ -248,6 +259,14 @@ colors
 
 
 
+.desktop-only {
+	visibility: visible;
+}
+
+.mobile-only {
+	display: none;
+}
+
 .carousel {
     margin-bottom: 0;
     padding: 0 40px 30px 40px;
@@ -316,6 +335,14 @@ footer .list-inline>li {
 	padding-left: 0px;
 }
 
+.desktop-only {
+	display: none;
+}
+
+.mobile-only {
+	display: block;
+}
+
 .flip img {
 		display: inline;
 		float: left;
@@ -337,5 +364,13 @@ footer .list-inline>li {
 	display: block;
 }
 
+}
+
+.item-bg {
+	background-size:cover;
+	height: 250px;
+	width: 250px;
+	background-position: center;
+	margin: 5px;
 }
 
